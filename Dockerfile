@@ -14,7 +14,7 @@ RUN apt-get update \
     apache2 \
  && rm -rf /var/lib/apt/lists/*
  
-# Copy files
+# Copy file
 COPY . /var/www/html/
 COPY apache-conf /etc/apache2/apache2.conf
  
