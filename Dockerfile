@@ -9,6 +9,7 @@ ENV APACHE_PID_FILE /var/run/apache2/apache2.pid
 ENV APACHE_SERVER_NAME localhost
  
 # Install services, packages and do cleanup
+# this is important
 RUN apt-get update \
  && apt-get install -y \
     apache2 \
